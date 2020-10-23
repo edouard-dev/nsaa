@@ -1,0 +1,4 @@
+- name: Create a Login
+  user:
+   name: marvin
+   password: "{{'NsaPool42' | password_hash('sha512')}}"

@@ -1,0 +1,21 @@
+- name: install apache
+  apt:
+    name: apache2
+    update_cache: yes
+    state: latest
+
+- name: install libapache
+  apt:
+    name: libapache2-mod-php7.3
+    update_cache: yes
+    state: latest
+
+- name: copy file
+  copy:
+    src: /root/sqlfile/data.php
+    dest: /var/www/html/
+
+- name: enable rewrite
+  apache2_module:
+    name: rewrite
+    state: present

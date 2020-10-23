@@ -1,0 +1,16 @@
+- name: install php
+  apt:
+    pkg:
+      - php-cli
+      - php-json
+      - php-pdo
+      - php-fpm
+      - php-mysql
+      - php-zip
+      - php-xml
+      - php-curl
+      - php-pear
+      - php-intl
+      - php-bcmath
+      - php-gd
+      - php-mbstring

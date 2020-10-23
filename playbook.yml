@@ -1,0 +1,8 @@
+---
+- name: AnsibleScript
+  hosts: web
+  remote_user: root
+
+  roles:
+    - setupapache
+...
